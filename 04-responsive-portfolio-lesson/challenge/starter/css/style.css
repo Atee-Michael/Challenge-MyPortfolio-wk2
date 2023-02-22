@@ -36,14 +36,14 @@ nav a {
   background-position: center;
   padding: 20px;
   text-align: center;
-  opacity:0.5 ;
+  opacity:0.7 ;
 }
 
 .hero-banner h2 {
   font-size: 36px;
   font-weight: bold;
   color: black;
-  text-shadow: 2px 2px 2px rgba(73, 4, 236, 0.5);
+  text-shadow: 2px 2px 2px rgba(236, 4, 4, 0.979);
   opacity:1;
 }
 
@@ -88,21 +88,77 @@ nav a {
   transition: transform 0.3s ease-in-out;
 }
 
+.image-box p {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  align-items: center;
+}
 
-.photo1,
-.photo2,
+.image-box:hover img {
+  transform: scale(1.1);
+}
+
+.photo-container {
+  margin: 0px 5%;
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-areas:
+  "project-1 project-2"
+  "project-3 project-3";
+
+}
+
+.photo-container p {
+color:navy;
+font-size: larger;
+display:flex;
+align-items:;
+
+
+
+
+}
+
+.photo1 {
+  grid-area: project-1;
+background-image: url("../images/02-portfolio-1.jpg");
+background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.photo2 {
+  grid-area: project-2;
+  background-image: url("../images/02-portfolio-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+cursor: pointer;
+}
+
+
 .photo3 {
-  display: flex;
-  justify-content: center;
+  grid-area: project-3;
+  background-image: url("../images/02-portfolio-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
-.photo1 img,
-.photo2 img,
-.photo3 img {
-  max-width: 100%;
-}
 
 /* Contact section */
+.contact {
+background-color: antiquewhite;
+
+}
+
 .contact p {
   margin-bottom: 1em;
 }
@@ -116,11 +172,6 @@ nav a {
 
 }
 
-.contact-text {
-
-
-
-}
 
 .contact li {
   margin-bottom: 1em;
