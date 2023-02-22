@@ -36,14 +36,15 @@ nav a {
   background-position: center;
   padding: 20px;
   text-align: center;
-  background-color: rgba(13, 170, 233, 0.5); /* transparent black color */
+  opacity:0.5 ;
 }
 
 .hero-banner h2 {
   font-size: 36px;
   font-weight: bold;
   color: black;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 2px rgba(73, 4, 236, 0.5);
+  opacity:1;
 }
 
 /* Main content */
@@ -69,6 +70,24 @@ nav a {
 .page-section img {
   margin: 1em;
 }
+
+.image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 600px;
+
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
 
 .photo1,
 .photo2,
